@@ -1,1 +1,8 @@
+--OneNote--
+Linux Essentials
+From netdevgroup@Cisco
+Link__<- https://1drv.ms/u/s!AiU4iFvTpkDrgTtA0I_f5MKQc2V5 ->
 
+
+* SED Commands 
+File-<https://docs.google.com/document/d/1bDRq0TUUs-tqPjOpvWdGsqN9_txHmWVFQH3FC-FFy5g/edit?usp=sharing>
