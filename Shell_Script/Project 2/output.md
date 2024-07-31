@@ -36,11 +36,13 @@ The expected output or result from running the file will be:
 > ```plaintext
 > [user@centos01 projects]$ bash fs_status.sh
 > ```
-> **Check Your Inbox**
- 
-
-
-> **Verify mail status**
+> 
+> **Check Your Inbox 📧**
+>
+>![Alt Text](https://github.com/srikxcipher/Linux/blob/ab1dd40b694c08627c8b5d1a0394cf7d75e7c591/Shell_Script/Project%202/assets/IMG_20240731_095458.jpg)
+>
+> 
+> **Verify mail status 📝**
 > 
 > **Check logs:**
 > ```bash
