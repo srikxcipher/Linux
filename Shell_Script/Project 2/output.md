@@ -54,9 +54,9 @@ The expected output or result from running the file will be:
 >
 > 
 > You can also use tail to monitor logs in real-time:
-> [user@centos01 projects]$ sudo grep recipient@example.com /var/log/mail.log
+> [user@centos01 projects]$ sudo tail -f /var/log/mail.log
 >
 > 
 > for CentOS/RHEL:
-> [user@centos01 projects]$ sudo grep recipient@example.com /var/log/mail.log
+> [user@centos01 projects]$ sudo tail -f /var/log/maillog
 > ```
