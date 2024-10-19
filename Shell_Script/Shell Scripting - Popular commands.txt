@@ -1,0 +1,113 @@
+Shell Scripting - Popular commands for debugging the node health
+
+> df - print info about the available disk space
+
+> free - free memory available on the RAM space
+
+> nproc - no of processors available for or assigned to VM
+
+**Few imp parameters for analyzing health of a node
+
+> top
+
+
+-----------------------------------------------------------------
+
+
+.............Custom node script for Health check.................
+
+
+nodeHealthCheck.sh
+
+#!/bin/bash - Shebang (Make sure to provide)
+
+############################################
+# Author : Srikant Snehit                  #
+# Date : 19.10.2024                        #
+#		                           #
+# Metadata information		           #
+############################################
+
+set -x #To set before exec #Debug mode
+set -e # exit the script when there is an error
+set -o # pipefail
+
+df -h
+
+free -g
+
+nproc
+
+ps -ef | grep amazon | awk -F"" '{print $2}'
+
+chmod u+x nodeHealth.sh
+
+
+
+------------------------------------------------------------------
+
+## ps -ef -- show processes in full format
+
+# Task is to find the Process ID's
+
+> ps -ef | grep "amazon" ## Specific process can be retrieved by using GREP Command
+
+## Only PID
+
+> ps -ef | grep "amazon" | awk -F"" '{print $2}' ## Specific column
+
+
+------------------------------------------------------------------
+
+
+logfile -- find errors in the log
+
+> curl  # provide the link of log file, retrieve info from endpoints 
+
+curl <---link---->.log | grep ERROR
+
+wget -> download command --> GREP command on downloaded file
+
+
+## Diff between wget vs curl
+
+-------------------------------------------------------------------
+
+
+## find command
+
+find / ---> '/' means everything
+
+sudo find / -name pam --> search in entire filesystem
+
+-------------------------------------------------------------------
+
+Conditional Statements
+
+if [expression]
+then
+	.....
+	.....
+else
+fi
+
+
+a=4
+b=10
+
+if [ $a > $b ]
+then 
+   echo "a is grt than b"
+else
+   echo "b is grt than a"   
+fi
+
+
+
+
+
+
+
+
+
+
